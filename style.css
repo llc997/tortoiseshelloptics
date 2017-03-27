@@ -1,82 +1,118 @@
 html {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 18px;
-  background-image: url("./images/glasses-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 30rem;
+  background-color: white;
 }
-/* HEADER */
-.header {
-  width: 960px;
-  background-color: cadetblue;
-  font-size: 1rem;
-  margin-top: 1rem;
+body {
+  line-height: 1.4;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+.flex {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  color: white;
-  padding: 1rem 2rem;
 }
-.logo {
+
+/* HEADER */
+header {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url(images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background-color: cadetblue;
+  color: white;
+}
+nav div {
   display: flex;
   align-items: center;
 }
-.logo img {
+nav img {
   height: 1.5rem;
-  display: inline;
+  margin-left: 2rem;
   margin-right: 1rem;
 }
-.logo span {
-  font-size: 1rem;
+nav ul {
+  margin-right: 1rem;
 }
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav li {
+  display: inline;
+  padding: 0 1rem;
 }
-.navigation span {
-  margin-right: 2rem;
-
+header .flex {
+  justify-content: flex-end;
 }
-
-/* BANNER */
-.banner {
-  background-color: white;
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: right;
+.main-banner {
+  display: inline-block;
   padding: 1.5rem 5rem;
   margin-top: 10rem;
-  float: right;
+  margin-right: -2rem;
+  background-color: white;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
-/* ICONS */
-.icons {
+/* SUPPORTING SECTION*/
+.supporting {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  width: 5rem;
   height: 8rem;
-  margin-top: 33rem;
-
+  margin: 3rem;
+  text-align: center;
+}
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+.service img.paper-icon {
+  width: 3.5rem;
 }
 
-
-
-/* INFO */
+/* INFO SECTION*/
 .info {
-
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+.title {
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+  padding: .5rem 1.5rem;
+  max-width: 10rem;
+  font-weight: bold;
+}
+.info p {
+  padding: 1rem;
+  font-size: .75rem;
 }
 
-/* COPYRIGHT */
-.copyright {
-  background-color: azure;
-  padding: 4rem 0 4rem 3rem;
+/* FOOTER */
+footer {
   display: flex;
   align-items: center;
+  background-color: azure;
+  padding: 4rem 3rem;
 }
-.copyright img {
-  height: 1.5rem;
+footer img {
   margin-right: 1rem;
+  height: 1.5rem;
 }
